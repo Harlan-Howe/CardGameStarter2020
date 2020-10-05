@@ -3,7 +3,8 @@ public class CardGameRunner
 
     public static void main(String[] args)
     {
-
+        WarReferee ref = new WarReferee();
+        ref.play();
 
 
 
