@@ -4,6 +4,11 @@ public class CardGameRunner
     public static void main(String[] args)
     {
 
+
+
+
+
+        /*
         // Create and print two cards
         Card one = new Card();
         Card two = new Card(" 2",2,"Spades");
@@ -29,7 +34,7 @@ public class CardGameRunner
         System.out.println("@@@@@@@@@@@@@@@@@@");
 
         // take all the cards from the first cardpile and add them to the second cardpile.
-        deck.takeAllCardsFromStack(cp);
+        deck.takeAllCardsFromPile(cp);
         System.out.println("Deck: \n"+deck);
         System.out.println("Original Pile: \n"+cp);
         System.out.println("&&&&&&&&&");
@@ -41,5 +46,7 @@ public class CardGameRunner
             System.out.println(i + "-->\t" + temp+"\t value: "+temp.getValue());
         }
         System.out.println("Remainder of deck: \n"+deck);
+        */
     }
+
 }
