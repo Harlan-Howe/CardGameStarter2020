@@ -12,7 +12,7 @@ public class CardGameRunner
         System.out.println(two);
         System.out.println("^^^^^^^^^^^^^");
 
-        //Create an print a new, empty Card Pile.
+        //Create and print a new, empty Card Pile.
         CardPile cp = new CardPile();
         System.out.println(cp);
         System.out.println("*****************");
