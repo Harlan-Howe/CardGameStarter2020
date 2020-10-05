@@ -29,7 +29,7 @@ public class CardGameRunner
         System.out.println("@@@@@@@@@@@@@@@@@@");
 
         // take all the cards from the first cardpile and add them to the second cardpile.
-        deck.takeAllCardsFromStack(cp);
+        deck.takeAllCardsFromPile(cp);
         System.out.println("Deck: \n"+deck);
         System.out.println("Original Pile: \n"+cp);
         System.out.println("&&&&&&&&&");
