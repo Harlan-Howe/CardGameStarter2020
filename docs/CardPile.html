@@ -187,35 +187,35 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addCard(Card)">addCard</a></span>&#8203;(<a href="Card.html" title="class in &lt;Unnamed&gt;">Card</a>&nbsp;c)</code></th>
 <td class="colLast">
-<div class="block">adds the current card to this stack, at the bottom.</div>
+<div class="block">adds the current card to this pile, at the bottom.</div>
 </td>
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code><a href="Card.html" title="class in &lt;Unnamed&gt;">Card</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dealCard()">dealCard</a></span>()</code></th>
 <td class="colLast">
-<div class="block">removes the card at the top of the stack and returns it.</div>
+<div class="block">removes the card at the top of the pile and returns it.</div>
 </td>
 </tr>
 <tr class="altColor" id="i2">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasCard()">hasCard</a></span>()</code></th>
 <td class="colLast">
-<div class="block">returns whether this stack has any cards in it.</div>
+<div class="block">returns whether this pile has any cards in it.</div>
 </td>
 </tr>
 <tr class="rowColor" id="i3">
 <td class="colFirst"><code>static <a href="CardPile.html" title="class in &lt;Unnamed&gt;">CardPile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeDeck(int)">makeDeck</a></span>&#8203;(int&nbsp;type)</code></th>
 <td class="colLast">
-<div class="block">A special method for creating a traditional, shuffled stack of 52 cards.</div>
+<div class="block">A special method for creating a traditional, shuffled pile of 52 cards.</div>
 </td>
 </tr>
 <tr class="altColor" id="i4">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAllCards()">removeAllCards</a></span>()</code></th>
 <td class="colLast">
-<div class="block">eliminates all the cards on this stack, resetting it to an empty stack.</div>
+<div class="block">eliminates all the cards on this pile, resetting it to an empty pile.</div>
 </td>
 </tr>
 <tr class="rowColor" id="i5">
@@ -229,14 +229,14 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size()">size</a></span>()</code></th>
 <td class="colLast">
-<div class="block">gets the number of cards on this stack.</div>
+<div class="block">gets the number of cards on this pile.</div>
 </td>
 </tr>
 <tr class="rowColor" id="i7">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#takeAllCardsFromPile(CardPile)">takeAllCardsFromPile</a></span>&#8203;(<a href="CardPile.html" title="class in &lt;Unnamed&gt;">CardPile</a>&nbsp;otherPile)</code></th>
 <td class="colLast">
-<div class="block">removes all the cards on the given stack and adds them to this stack,
+<div class="block">removes all the cards on the given pile and adds them to this pile,
  in order.</div>
 </td>
 </tr>
@@ -333,20 +333,20 @@ extends java.lang.Object</pre>
 <section class="detail">
 <h3><a id="makeDeck(int)">makeDeck</a></h3>
 <div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType"><a href="CardPile.html" title="class in &lt;Unnamed&gt;">CardPile</a></span>&nbsp;<span class="memberName">makeDeck</span>&#8203;(<span class="arguments">int&nbsp;type)</span></div>
-<div class="block">A special method for creating a traditional, shuffled stack of 52 cards.
+<div class="block">A special method for creating a traditional, shuffled pile of 52 cards.
  Since various games might have different "values" for the cards,
  there are three options you might use: ACE_LOW, ACE_HIGH, or EQUAL_FACES.
  <br>For example:
  <br>
- <pre>     CardStack deck = CardStack.makeDeck(CardStack.ACE_LOW);</pre>
+ <pre>     Cardpile deck = Cardpile.makeDeck(Cardpile.ACE_LOW);</pre>
 
  For ACE_LOW and EQUAL_FACES, the Ace is worth 1; for ACE_HIGH, the Ace is
  worth 14. For EQUAL_FACES, the J, Q, K are all worth 10.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>type</code> - - CardStack.ACE_LOW, CardStack.ACE_HIGH, or CardStack.EQUAL_FACES</dd>
+<dd><code>type</code> - - Cardpile.ACE_LOW, Cardpile.ACE_HIGH, or Cardpile.EQUAL_FACES</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a CardStack of 52 cards, shuffled.</dd>
+<dd>a Cardpile of 52 cards, shuffled.</dd>
 </dl>
 </section>
 </li>
@@ -354,7 +354,7 @@ extends java.lang.Object</pre>
 <section class="detail">
 <h3><a id="addCard(Card)">addCard</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">addCard</span>&#8203;(<span class="arguments"><a href="Card.html" title="class in &lt;Unnamed&gt;">Card</a>&nbsp;c)</span></div>
-<div class="block">adds the current card to this stack, at the bottom.</div>
+<div class="block">adds the current card to this pile, at the bottom.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>c</code> - - the card to add</dd>
@@ -372,10 +372,10 @@ extends java.lang.Object</pre>
 <section class="detail">
 <h3><a id="hasCard()">hasCard</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">hasCard</span>()</div>
-<div class="block">returns whether this stack has any cards in it.</div>
+<div class="block">returns whether this pile has any cards in it.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true, if there is at least one card in this CardStack.</dd>
+<dd>true, if there is at least one card in this Cardpile.</dd>
 </dl>
 </section>
 </li>
@@ -383,8 +383,8 @@ extends java.lang.Object</pre>
 <section class="detail">
 <h3><a id="dealCard()">dealCard</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="Card.html" title="class in &lt;Unnamed&gt;">Card</a></span>&nbsp;<span class="memberName">dealCard</span>()</div>
-<div class="block">removes the card at the top of the stack and returns it.
- Returns null if the stack is empty.</div>
+<div class="block">removes the card at the top of the pile and returns it.
+ Returns null if the pile is empty.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the next card, or <i>null</i> if there isn't one.</dd>
@@ -395,7 +395,7 @@ extends java.lang.Object</pre>
 <section class="detail">
 <h3><a id="size()">size</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">int</span>&nbsp;<span class="memberName">size</span>()</div>
-<div class="block">gets the number of cards on this stack.</div>
+<div class="block">gets the number of cards on this pile.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>number of cards</dd>
@@ -406,18 +406,18 @@ extends java.lang.Object</pre>
 <section class="detail">
 <h3><a id="removeAllCards()">removeAllCards</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">removeAllCards</span>()</div>
-<div class="block">eliminates all the cards on this stack, resetting it to an empty stack.</div>
+<div class="block">eliminates all the cards on this pile, resetting it to an empty pile.</div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="takeAllCardsFromPile(CardPile)">takeAllCardsFromPile</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">takeAllCardsFromPile</span>&#8203;(<span class="arguments"><a href="CardPile.html" title="class in &lt;Unnamed&gt;">CardPile</a>&nbsp;otherPile)</span></div>
-<div class="block">removes all the cards on the given stack and adds them to this stack,
+<div class="block">removes all the cards on the given pile and adds them to this pile,
  in order.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>otherPile</code> - - another CardStack, whose cards this stack is taking.</dd>
+<dd><code>otherPile</code> - - another Cardpile, whose cards this pile is taking.</dd>
 </dl>
 </section>
 </li>
